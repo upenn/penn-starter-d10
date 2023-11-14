@@ -12,10 +12,6 @@
         {
             "type": "vcs",
             "url": "https://git.drupalcode.org/issue/bg_img_field-3296632.git"
-        },
-        {
-            "type": "vcs",
-            "url": "https://git.drupalcode.org/issue/bg_img_field-3296632.git"
         }
     ],
     
@@ -32,7 +28,7 @@
         "drupal/adminimal_theme": "^1.6",
         "drupal/better_exposed_filters": "^5.0@beta",
         "drupal/bg_image_formatter": "^1.14",
-        "drupal/bg_img_field": "dev-8.x-1.x",
+        "drupal/bg_img_field": "^1.7",
         "drupal/bootstrap_layouts": ">=5.1",
         "drupal/bootstrap_site_alert": "^1.9",
         "drupal/ckeditor_a11ychecker": "^1.0",
