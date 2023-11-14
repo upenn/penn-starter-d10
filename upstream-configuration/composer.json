@@ -4,7 +4,14 @@
     "repositories": [
         {
             "type": "composer",
-            "url": "https://packages.drupal.org/8"
+            "url": "https://packages.drupal.org/8",
+            "exclude": [
+                "drupal/bg_img_field"
+            ]
+        },
+        {
+            "type": "vcs",
+            "url": "https://git.drupalcode.org/issue/bg_img_field-3296632.git"
         }
     ],
     
