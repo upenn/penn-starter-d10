@@ -126,7 +126,7 @@ import 'bootstrap';
 (function ($, Drupal, drupalSettings) {
   Drupal.behaviors.mobileNavs = {
     attach: function (context, settings) {
-      $('body').once('event-bindings').each(function () {
+      $(once('event-bindings', 'body', context)).each(function () {
 
         // Add mobileBreakpoint class to body so contained keyboard focus on menu only triggers when mobile menu is present
         var handleMatchMedia = function (mediaQuery) {
@@ -171,7 +171,8 @@ import 'bootstrap';
 
   Drupal.behaviors.pageMods = {
     attach: function (context, settings) {
-      $('body').once('page-load').each(function () {
+      $(once('page-load', 'body', context)).each(function () {
+
 
 
       // recaptcha a11y fix

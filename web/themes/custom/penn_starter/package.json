@@ -1,29 +1,44 @@
 {
-  "name": "penn_starter",
-  "description": "RADIX_SUBTHEME_DESCRIPTION",
-  "private": true,
-  "scripts": {
-    "development": "mix",
-    "watch": "mix watch",
-    "watch-poll": "mix watch -- --watch-options-poll=1000",
-    "hot": "mix watch --hot",
-    "production": "mix --production"
-  },
-  "devDependencies": {
-    "bootstrap": "4.3.1",
-    "browser-sync": "^2.27.7",
-    "browser-sync-webpack-plugin": "2.2.2",
-    "cross-env": "5.2.1",
-    "jquery": "^3.5.1",
-    "laravel-mix": "^6.0.36",
-    "popper.js": "1.16.1",
-    "postcss": "^8.3.6",
-    "resolve-url-loader": "^4.0.0",
-    "sass": "1.25.0",
-    "sass-loader": "8.0.2",
-    "vue-template-compiler": "2.6.11"
-  },
-  "dependencies": {
-    "ansi-regex": "^6.0.1"
-  }
+		"name": "penn_starter",
+		"description": "My custom Radix subtheme",
+		"private": true,
+		"engines": {
+				"npm": ">=6.0",
+				"node": ">=16.0",
+				"yarn": ">=1.6"
+		},
+		"license": "MIT",
+		"scripts": {
+				"postinstall": "find node_modules/ -name '*.info' -type f -delete",
+				"dev": "mix",
+				"watch": "mix watch",
+				"stylint": "npx stylelint '**/*.scss'",
+				"stylint-fix": "npx stylelint '**/*.scss' --fix",
+				"watch-poll": "mix watch -- --watch-options-poll=1000",
+				"hot": "mix watch --hot",
+				"production": "mix --production"
+		},
+		"devDependencies": {
+				"@popperjs/core": "^2.9.2",
+				"autoprefixer": "10.4.5",
+				"bootstrap": "^5.2.0",
+				"browser-sync": "^2.29.3",
+				"browser-sync-webpack-plugin": "^2.3.0",
+				"cross-env": "^7.0.3",
+				"laravel-mix": "^6.0.18",
+				"laravel-mix-copy-watched": "^3.0",
+				"laravel-mix-stylelint": "^1.0.0",
+				"npm-force-resolutions": "0.0.10",
+				"postcss-scss": "^4.0.2",
+				"sass": "^1.63.6",
+				"sass-loader": "^13.0.2",
+				"stylelint": "^15.1",
+				"stylelint-config-prettier": "^9.0.3",
+				"stylelint-config-recess-order": "^4.3",
+				"stylelint-config-standard-scss": "^11.1",
+				"stylelint-webpack-plugin": "^4.1"
+		},
+    "resolutions": {
+      "axios": ">=1.6.0"
+    }
 }

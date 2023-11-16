@@ -1,7 +1,7 @@
 name: Penn starter
 description: Starter theme for Penn sites
 screenshot: screenshot.png
-core_version_requirement: ^8.7.7 || ^9.0
+core_version_requirement: ^10
 # version: VERSION
 engine: twig
 type: theme
@@ -27,14 +27,14 @@ libraries:
 
 libraries-override:
   radix/bootstrap: false
-  ckeditor_accordion/accordion_style:
+  ckeditor_accordion/accordion.frontend:
     js:
-      js/ckeditor-accordion.js: assets/js/ckeditor-accordion.js
+      js/accordion.frontend.js: assets/js/accordion.frontend.js
     css:
       theme:
-        css/ckeditor-accordion.css: assets/css/penn_starter.style.css
+        css/accordion.frontend.css: assets/css/penn_access.style.css
 
-ckeditor_stylesheets:
+ckeditor5_stylesheets:
   - assets/css/penn_starter.style.css
 
 components:
