@@ -63,9 +63,6 @@
         },
         "enable-patching": true,
         "patches": {
-            "drupal/core": {
-                "Fail gracefully if CKEditor plugins fail to provide file URI": "https://www.drupal.org/files/issues/2022-02-22/3264236-10.patch"
-            }
          }
     },
     "autoload": {
