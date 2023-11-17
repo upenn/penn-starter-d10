@@ -43,7 +43,7 @@
         "drupal/default_content": "^2.0@alpha",
         "drupal/mysql56": "^1.4",
         "drupal/pathauto": "^1.10",
-        "drupal/webform": ">=6.1",
+        "drupal/webform": "^6.2",
         "drupal/viewsreference": "2.x-dev@dev",
         "drupal/google_analytics": "^4.0",
         "drupal/upgrade_status": "^4.0"
