@@ -29,7 +29,7 @@
         "drupal/better_exposed_filters": "^6.0",
         "drupal/bg_image_formatter": ">=1.12",
         "drupal/bootstrap_layouts": ">=5.1",
-        "drupal/bootstrap_site_alert": "^1.9",
+        "drupal/bootstrap_site_alert": "^1.12",
         "drupal/ckeditor_accordion": "^2.0",
         "drupal/ckeditor_bootstrap_buttons": "^2.0",
         "drupal/components": ">=3.0@beta",
@@ -45,7 +45,8 @@
         "drupal/pathauto": "^1.10",
         "drupal/webform": ">=6.1",
         "drupal/viewsreference": "2.x-dev@dev",
-        "drupal/google_analytics": "^4.0"
+        "drupal/google_analytics": "^4.0",
+        "drupal/upgrade_status": "^4.0"
     },
     "conflict": {
         "symfony/http-foundation": "3.4.24"
