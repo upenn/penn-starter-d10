@@ -35,7 +35,6 @@
 {%
   set classes = [
     dom_id ? 'js-view-dom-id-' ~ dom_id,
-    'listing-grid'
   ]
 %}
 <div{{ attributes.addClass(classes) }}>
@@ -51,14 +50,14 @@
 
   {{ exposed }}
   {{ attachment_before }}
-<div class="views-view-grid">
+
   {% if rows -%}
     {{ rows }}
   {% elseif empty -%}
     {{ empty }}
   {% endif %}
   {{ pager }}
-</div>
+
   {{ attachment_after }}
   {{ more }}
 

@@ -1,0 +1,145 @@
+// Listing Pages (ie News, Events)
+// -----------------------------------------------------------------------------
+
+.node--type-listing-page, .node--type-staff-listing {
+    &.node--view-mode-full {
+        > .bs-region--top {
+            padding: 0 15px;
+        }
+        > .bs-region--main {
+            padding: 0 15px;
+            width: 100%;
+        }
+        .views-element-container {
+            @include make-row();
+            .sidebar-filter {
+                @include make-lg-column(3);
+                @extend .mb-5;
+                .sidebar-left-wrapper {
+                    form {
+                        label {
+                            @extend .sidebar-heading;
+                        }
+                        input.button {
+                            @extend a;
+                            @extend .btn;
+                            @extend .btn-outline;
+                            color: $blue!important;
+                            &:hover, &:focus {
+                                color: white!important;
+                            }
+                        }
+                    }
+                }
+            }
+            .views-view-grid {
+                @include make-lg-column(9);
+                
+                @include media-breakpoint-up(lg) {
+                    padding: 0 30px;
+                }
+                .views-row {
+                   // border-bottom: 1px solid $gray-300;
+                   .badge {
+                    margin-bottom: 10px;
+                   }
+                    .views-col {
+                        padding: 0;
+                    }
+                    &:first-of-type {
+                        .node--view-mode-teaser {
+                           // padding-top: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .listing-page__field-featured-content {
+            .bs-region--left {
+                @include make-col-offset(1);
+                @include media-breakpoint-down(lg) {
+                    margin-left: 0;
+                }
+            }
+        }
+        .adminimal-admin-toolbar & {
+            > .bs-region--top {
+                margin-top: 0;
+            }
+        }
+    }
+    .has-featured & {
+        > .bs-region--top {
+            width: 100%;
+            margin: -4rem 0 3rem 0;
+            .listing-page__field-featured-content {
+                background-color: $gray-500;
+                border-bottom: 0px solid $gray-300;
+                padding: 2rem 0 .3rem 0;
+                .featured-flag {
+                    @extend .badge;
+                    @extend .badge-secondary;
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+    .listing-grid, .staff-by-focus {
+        @extend .container;
+        .person__field-staff-focus {
+            .field__item {
+                background-color: $gray-200;
+                border: 1px solid $gray-400;
+                border-radius: 5px;
+                color: $gray-900;
+                font-size: .8rem;
+                font-weight: 500;
+                line-height: 2;
+                margin-bottom: 5px;
+                text-align: center;
+            }
+        }
+        .views-field-item-wrapper {
+            padding: 1rem;
+            border: 1px solid $gray-300;
+            //margin-left: 15px;
+            margin-bottom: 1rem;
+            @include media-breakpoint-up(md) {
+                min-height: 325px;
+            }
+            .views-field-title, .views-field-created {
+                display:block;
+                @extend .mb-2;
+            }
+            h3 {
+                margin-bottom: 0;
+                line-height: 0;
+            }
+
+            a {
+                font-size: 1.5rem;
+                line-height: 1.2;
+            }
+   
+        }
+    }
+    
+    .staff-listing__field-attach-a-listing-view {
+        .field__item {
+            //@include make-row;
+            margin-bottom: 2rem;
+            .views-view-grid {
+                display: flex;
+                flex-wrap: wrap;
+                margin-right: -15px;
+                margin-left: -15px;
+             }
+        }
+    }
+ 
+   

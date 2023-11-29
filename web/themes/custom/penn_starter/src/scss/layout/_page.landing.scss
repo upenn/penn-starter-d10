@@ -1,0 +1,188 @@
+// Landing Page: Full
+// -----------------------------------------------------------------------------
+
+body {
+    &.has-bg {
+      .bg-container {
+        height: 30vh;
+        min-height: 350px;
+        background-color: $blue!important;
+        &:after {
+          display: block;
+          position: relative;
+          background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, rgb(0 0 0 / 70%) 100%);
+          margin-top: -350px;
+          height: 350px;
+          width: 100%;
+          content: '';
+          z-index: 0;
+        }
+  
+        .container {
+          height: 100%;
+          position: relative;
+          z-index: 1;
+  
+          .page__header-text-container {
+            position: absolute;
+            bottom: 2rem;
+            }
+          }
+        }
+      }
+    
+  
+    &:not(.has-bg) {
+      .page_landing {
+        > header {
+          @extend .mt-5;
+          .page__header-text-container {
+            
+            .page__header-label {
+                color: $red;
+                text-transform: uppercase;
+                font-size: .9rem;
+                font-weight: 500;
+                letter-spacing: 1px;
+                margin-bottom: .5rem;
+            }
+            .page__header-title {
+                //padding-bottom: 1.5rem;
+                color: $black;
+                @extend .display-4;
+            }
+            .page__header-overview {
+              color: $black;
+            }
+            &:after {
+                content: '';
+                display: block;
+                position: relative;
+                //bottom: -11px;
+                background: $gray-300;
+                width: 100%;
+                height: 3px;
+                margin-top: 1.5rem;
+            }
+        }
+        }
+      }
+    }
+  }
+  
+  
+  
+  .page_landing {
+  
+      .page__header-text-container {
+  
+          .page__header-title {
+            @extend .display-3;
+            color: white;
+          }
+  
+          .page__header-overview {
+            @extend .lead;
+            color: white;
+          }
+        }
+    .landing-page__field-callout-box {
+      background-color: $primary;
+      padding: 1.5rem;
+  
+      .callout-box-wrapper {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 1rem;
+        height: 100%;
+  
+        * {
+          color: #FFF;
+        }
+  
+        p {
+          font-weight: 400;
+        }
+  
+        .btn {
+          display: block;
+          width: 100%;
+          @extend .btn-primary;
+          border: 1px solid rgba(255, 255, 255, 0.2);
+  
+          &:hover,
+          &:focus {
+            background-color: $white;
+            color: $primary;
+            span {
+              color: $primary;
+            }
+          }
+        }
+      }
+    }
+  
+    
+  }
+  
+  
+  // Alt Landing Page
+  .page_landing_alt {
+    .page__header-text-container {
+      &:after {
+        content: '';
+        display: block;
+        position: relative;
+        //bottom: -11px;
+        background: $gray-300;
+        width: 100%;
+        height: 3px;
+        margin-top: 2rem;
+    }
+      @extend .mb-3;
+      @extend .mt-5;
+      .page__header-title {
+        @extend .display-4;
+        //color: white;
+      }
+  
+      .page__header-overview {
+        @extend .lead;
+        //color: white;
+      }
+    }
+    .landing-page-alt__field-callout-box {
+      background-color: $primary;
+      padding: 1.5rem;
+  
+      .callout-box-wrapper {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 1.5rem;
+        height: 100%;
+        h2 {
+          font-size: 2.1rem;
+        }
+        * {
+          color: #FFF;
+        }
+  
+        p {
+          font-weight: 400;
+          font-size: .95rem;
+        }
+  
+        .btn {
+          display: block;
+          width: 100%;
+          @extend .btn-primary;
+          border: 1px solid rgba(255, 255, 255, 0.2);
+  
+          &:hover,
+          &:focus {
+            background-color: $white;
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+  

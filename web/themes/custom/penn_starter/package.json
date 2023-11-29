@@ -32,13 +32,13 @@
 				"postcss-scss": "^4.0.2",
 				"sass": "^1.63.6",
 				"sass-loader": "^13.0.2",
-				"stylelint": "^15.1",
-				"stylelint-config-prettier": "^9.0.3",
+				"stylelint": "^15.11.0",
+				"stylelint-config-prettier": "^9.0.5",
 				"stylelint-config-recess-order": "^4.3",
 				"stylelint-config-standard-scss": "^11.1",
 				"stylelint-webpack-plugin": "^4.1"
 		},
-    "resolutions": {
-      "axios": ">=1.6.0"
-    }
+		"resolutions": {
+				"axios": ">=1.6.0"
+		}
 }

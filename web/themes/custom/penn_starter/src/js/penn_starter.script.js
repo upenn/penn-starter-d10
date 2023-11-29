@@ -1,5 +1,17 @@
-import 'popper.js';
-import 'bootstrap';
+
+
+(function () {
+	// * Tooltip initialization, remove it if not necessary
+	document
+		.querySelectorAll('[data-toggle="tooltip"]')
+		.forEach((tooltipElement) => new Tooltip(tooltipElement));
+
+	// * Toast initialization, remove it if not necessary
+	document
+		.querySelectorAll('.toast')
+		.forEach((toastElement) => new Toast(toastElement));
+})();
+
 /*
 (function ($) {
   'use strict';
@@ -155,6 +167,45 @@ import 'bootstrap';
 
         });
 
+        if ($('body').hasClass('mobileBreakpoint')) {
+          var secondaryMenu = $('.block--secondarymenu');
+          $('.navbar-collapse').prepend(secondaryMenu);
+        } else {
+          $(secondaryMenu).insertAfter('.searchContainer');
+        }
+
+        window.addEventListener("resize", function () {
+          var secondaryMenu = $('.block--secondarymenu');
+
+          if (window.innerWidth > 992) {
+            $(secondaryMenu).insertAfter('.searchContainer');
+          }
+
+          if (window.innerWidth < 991) {
+            $('.navbar-collapse').prepend(secondaryMenu);
+          } // var secondaryMenu = $('.block--secondarymenu');
+          //  if ($('body').hasClass('mobileBreakpoint')) {
+          //    $('.navbar-collapse').prepend(secondaryMenu);
+          //  } 
+          //  if (window.innerWidth > 992) $(secondaryMenu).insertAfter('.searchContainer');
+          // if (window.innerWidth < 992) $(secondaryMenu).insertAfter('.searchContainer');
+
+        });
+
+  
+          // Select all .nav-item a elements
+          var navItems = document.querySelectorAll('.block--secondarymenu .nav-item a');
+      
+          // Check if there are at least two .nav-item a elements
+          if(navItems.length >= 2) {
+              // Target the second .nav-item a element
+              var secondNavItem = navItems[1];
+      
+              // Modify its target attribute to open in a new window/tab
+              secondNavItem.target = '_blank';
+          }
+
+
 
       });
     }
@@ -187,10 +238,7 @@ import 'bootstrap';
         }
       }
 
-      // apply has-bg class to body when a landing page has a background image
-      if ($(".landing-page__field-background-image")[0]) {
-        $('body').addClass('has-bg');
-      }
+    
 
       // apply has-alert class to body when an alert is present
       if ($(".bs-site-alert")[0]) {
@@ -200,6 +248,16 @@ import 'bootstrap';
       // apply has-featured class to body when a featured view mode is present
       if ($(".node--type-listing-page .listing-page__field-featured-content")[0]) {
         $('body').addClass('has-featured');
+      }  // apply has-bg class to body when a landing page has a background image
+      var bgContainer = document.querySelector('.page__header');
+
+      if (bgContainer) {
+          var style = window.getComputedStyle(bgContainer);
+          var backgroundImage = style.backgroundImage;
+  
+          if (backgroundImage !== 'none') {
+              document.body.classList.add('has-bg');
+          }
       }
 
       // featured date

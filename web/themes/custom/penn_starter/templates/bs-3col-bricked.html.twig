@@ -32,12 +32,13 @@
     {{ top.content }}
   </{{ top.wrapper }}>
   {% endif %}
-
-  <{{ top_left.wrapper }}{{ top_left.attributes }}>
   {% if top_left.content %}
-    {{ top_left.content }}
-  {% endif %}
+  <{{ top_left.wrapper }}{{ top_left.attributes }}>
+<div class="sidebar-left-wrapper">
+      {{ drupal_region('left') }}
+</div>
     </{{ top_left.wrapper }}>
+      {% endif %}
 
   {% if top_middle.content %}
   <{{ top_middle.wrapper }}{{ top_middle.attributes }}>

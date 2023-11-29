@@ -1,0 +1,125 @@
+// Headings
+// -----------------------------------------------------------------------------
+h1, h2, h3, h4, h5, h6 {
+
+
+}
+
+// Text
+// -----------------------------------------------------------------------------
+p {
+
+}
+
+// Links
+// -----------------------------------------------------------------------------
+a {
+
+
+  &.btn {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: white;
+    min-width: 210px;
+    font-size: .9rem;
+    letter-spacing: 1.8px;
+  }
+  &.btn-outline {
+    background-color: white;
+    border: 1px solid $gray-600;
+    color: $blue;
+    &:hover, &:focus {
+      color: white;
+      background-color: $blue;
+      border-color: $blue;
+    }
+  }
+}
+
+// Lists
+// -----------------------------------------------------------------------------
+ol,
+ul,
+dl {
+  li {
+    font-size: .95rem;
+  }
+}
+
+// Image
+// -----------------------------------------------------------------------------
+img {
+  max-width: 100%;
+}
+
+figure {
+
+}
+
+figcaption {
+
+}
+
+// Other
+// -----------------------------------------------------------------------------
+blockquote {
+
+}
+
+strong {
+
+}
+
+small {
+
+}
+
+table {
+  width: 100%;
+  border: 4px solid $gray-300;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  td, th {
+    padding: 20px;
+  }
+  thead, tbody {
+    text-align: left;
+    th {
+      background: $blue;
+      color: $white;
+     // font-size: .9rem;
+      font-weight: 500;
+      letter-spacing: 0;
+    }
+  }
+  tbody {
+    border-bottom: 2px solid $gray-300;
+    td {
+      border-bottom: 2px solid $gray-300;
+      color: $gray-900;
+     // font-size: .87rem;
+    }
+    tr:last-child td {
+      border-bottom: none;
+    }
+  }
+  caption {
+    color: $gray-900;
+    font-size: .75rem;
+  }
+}
+
+.badge-secondary {
+  color: #fff;
+  background-color: $red;
+}
+
+.badge-info {
+  color: #fff;
+  background-color: #17a2b8;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}

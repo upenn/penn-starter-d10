@@ -7,6 +7,10 @@ engine: twig
 type: theme
 base theme: radix
 
+'interface translation project': penn_starter
+'interface translation server pattern': 'web/themes/custom/penn_starter/translations/%language.po'
+
+
 regions:
   navbar_branding: Navbar branding
   navbar_left:  Navbar left
@@ -29,13 +33,13 @@ libraries-override:
   radix/bootstrap: false
   ckeditor_accordion/accordion.frontend:
     js:
-      js/accordion.frontend.js: assets/js/accordion.frontend.js
+      js/accordion.frontend.js: build/js/accordion.frontend.js
     css:
       theme:
-        css/accordion.frontend.css: assets/css/penn_access.style.css
+        css/accordion.frontend.css: build/css/penn_starter.style.css
 
 ckeditor5_stylesheets:
-  - assets/css/penn_starter.style.css
+  - build/css/penn_starter.style.css
 
 components:
   namespaces:

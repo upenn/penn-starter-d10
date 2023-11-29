@@ -1,10 +1,10 @@
 style:
-  version: 1
   css:
     theme:
-      assets/css/penn_starter.style.css: {}
+      build/css/penn_starter.style.css: {}
   js:
-    assets/js/penn_starter.script.js: {}
+    build/js/penn_starter.script.js: {}
+    https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js: { type: external, minified: true }
   dependencies:
     - core/drupal
     - core/jquery
